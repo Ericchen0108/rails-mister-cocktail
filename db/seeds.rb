@@ -10,7 +10,7 @@ require 'open-uri'
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Cleaning the database..."
-
+Cocktail.destroy_all
 Ingredient.destroy_all
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
